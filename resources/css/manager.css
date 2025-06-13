@@ -1,0 +1,33 @@
+/* resources/css/manager.css */
+#wrapper-manager {
+    overflow-x: hidden;
+}
+
+#sidebar-manager-wrapper {
+    transition: margin .25s ease-out;
+}
+
+#page-content-manager-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper-manager.toggled #sidebar-manager-wrapper {
+    margin-left: -250px;
+}
+
+@media (min-width: 768px) {
+    #sidebar-manager-wrapper {
+        margin-left: 0;
+    }
+    #page-content-manager-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+    #wrapper-manager.toggled #sidebar-manager-wrapper {
+        margin-left: -250px;
+    }
+}
+.list-group-item-action.bg-primary:hover {
+    color: #fff !important;
+    background-color: #0d6efd !important; /* Slightly darker blue on hover */
+}

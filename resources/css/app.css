@@ -1,0 +1,5 @@
+/* resources/css/app.css */
+/* Có thể để trống hoặc thêm các CSS resets / normalize */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

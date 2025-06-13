@@ -1,0 +1,33 @@
+/* resources/css/warehouse.css */
+#wrapper-warehouse {
+    overflow-x: hidden;
+}
+
+#sidebar-warehouse-wrapper {
+    transition: margin .25s ease-out;
+}
+
+#page-content-warehouse-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper-warehouse.toggled #sidebar-warehouse-wrapper {
+    margin-left: -250px;
+}
+
+@media (min-width: 768px) {
+    #sidebar-warehouse-wrapper {
+        margin-left: 0;
+    }
+    #page-content-warehouse-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+    #wrapper-warehouse.toggled #sidebar-warehouse-wrapper {
+        margin-left: -250px;
+    }
+}
+.list-group-item-action.bg-info:hover {
+    color: #fff !important;
+    background-color: #0dcaf0 !important; /* Slightly darker cyan on hover */
+}

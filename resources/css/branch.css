@@ -1,0 +1,33 @@
+/* resources/css/branch.css */
+#wrapper-branch {
+    overflow-x: hidden;
+}
+
+#sidebar-branch-wrapper {
+    transition: margin .25s ease-out;
+}
+
+#page-content-branch-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper-branch.toggled #sidebar-branch-wrapper {
+    margin-left: -250px;
+}
+
+@media (min-width: 768px) {
+    #sidebar-branch-wrapper {
+        margin-left: 0;
+    }
+    #page-content-branch-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+    #wrapper-branch.toggled #sidebar-branch-wrapper {
+        margin-left: -250px;
+    }
+}
+.list-group-item-action.bg-success:hover {
+    color: #fff !important;
+    background-color: #198754 !important; /* Slightly darker green on hover */
+}
